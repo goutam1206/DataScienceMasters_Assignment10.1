@@ -15,12 +15,13 @@ def movingAverage(myarray, window):
             if(n <= len(myarray)):
                 sum += myarray[j]
                 if (j == n-1):
-                    print (sum/window)
+                    Average = (sum/window)
+                    Averages.append(Average)
                     m+=1
                     n+=1
                     sum=0
                 
-        
+    print(Averages)
 arr = [3, 5, 7, 2, 8, 10, 11, 65, 72, 81, 99, 100, 150]
 #print (len(arr))
 movingAverage(arr,3)
