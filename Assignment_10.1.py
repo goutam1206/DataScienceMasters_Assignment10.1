@@ -15,7 +15,7 @@ def movingAverage(myarray, window):
             if(n <= len(myarray)):
                 sum += myarray[j]
                 if (j == n-1):
-                    print (sum/3)
+                    print (sum/window)
                     m+=1
                     n+=1
                     sum=0
